@@ -7,5 +7,19 @@
 // En "vegetarian" kostar 85 kr
 
 function pizzaPrice(pizza) {
-  //Din kod här.
+  switch (pizza) {
+    case "hawaii":
+      return 80;
+    case "peperoni":
+      return 90;
+    case "vegetarian":
+      return 85;
+    default:
+      return "Pizza unavailable";
+  }
 }
+
+console.log(pizzaPrice("hawaii"));
+console.log(pizzaPrice("peperoni"));
+console.log(pizzaPrice("vegetarian"));
+console.log(pizzaPrice("kebab"));
